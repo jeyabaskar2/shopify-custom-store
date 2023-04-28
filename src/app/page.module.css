@@ -227,3 +227,30 @@
     transform: rotate(0deg);
   }
 }
+
+.productList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product {
+  width: 250px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #120f0f;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(39, 31, 31, 0.2);
+  text-align: center;
+}
+
+.product h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.product p {
+  margin-bottom: 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
