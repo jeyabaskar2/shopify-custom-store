@@ -247,10 +247,14 @@
 .product h3 {
   margin-top: 0;
   font-size: 1.2rem;
-}
+} 
 
 .product p {
   margin-bottom: 0;
   font-size: 1.1rem;
   font-weight: bold;
+}
+.product img{
+  width:150px;
+  height: 150px;
 }

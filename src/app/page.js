@@ -23,9 +23,15 @@ export default function Home(props) {
       <div className={styles.productList}>
         {allProducts?.map((product) => (
           <div className={styles.product} key={product.id}>
-            <img src="https://via.placeholder.com/150" alt="image" />
-            <h3 className={styles.productTitle}>{product.node.title}</h3>
-            <p>${product.node.variants.edges[0].node.priceV2.amount}</p>
+            <img
+              src={
+                product?.node?.featuredImage?.url ||
+                "https://via.placeholder.com/150"
+              }
+              alt="image"
+            />
+            <h3 className={styles.productTitle}>{product?.node?.title}</h3>
+            <p>${product?.node?.variants?.edges[0]?.node?.priceV2?.amount}</p>
           </div>
         ))}
       </div>
